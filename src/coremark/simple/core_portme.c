@@ -60,9 +60,9 @@ Original Author: Shay Gal-on
 #define CORETIMETYPE clock_t 
 #define GETMYTIME(_t) (*_t=clock())
 #else
-#define NSECS_PER_SEC MS_TICK_PER_SEC
-#define CORETIMETYPE ms_tick_t
-#define GETMYTIME(_t) (*_t=ms_time_get())
+#define NSECS_PER_SEC   MS_TICK_PER_SEC
+#define CORETIMETYPE    ms_tick_t
+#define GETMYTIME(_t)   (*_t=ms_time_get())
 #endif
 #define MYTIMEDIFF(fin,ini) ((fin)-(ini))
 #define TIMER_RES_DIVIDER 1

@@ -67,10 +67,10 @@ typedef clock_t CORE_TICKS;
 	Initialize these strings per platform
 */
 #ifdef __MS_RTOS__
-#define COMPILER_VERSION "7.2.0"
-#define COMPILER_FLAGS   "-O2 -Os"
-#define MEM_METHOD MEM_STATIC
-#define MAIN_HAS_NORETURN 1
+#define COMPILER_VERSION    "7.2.0"
+#define COMPILER_FLAGS      "-O2 -Os"
+#define MEM_METHOD          MEM_STATIC
+#define MAIN_HAS_NORETURN   1
 #endif
 
 #ifndef COMPILER_VERSION 
