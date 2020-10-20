@@ -99,6 +99,12 @@ MAIN_RETURN_TYPE main(void) {
 MAIN_RETURN_TYPE main(int argc, char *argv[]) {
 #endif
 #else
+
+int coremark_init(void)
+{
+    return 0;
+}
+
 static void __ms_shell_coremark(int argc, char *argv[], const ms_shell_io_t *io) {
 #endif
 	ee_u16 i,j=0,num_algorithms=0;
